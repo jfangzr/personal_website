@@ -30,18 +30,18 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en" suppressHydrationWarning>
+		<html className="bg-neutral-100" lang="en" suppressHydrationWarning >
 			<head />
 			<body
 				className={clsx(
-					"min-h-screen bg-background font-sans antialiased",
+					"min-h-screen font-sans antialiased",
 					fontSans.variable
 				)}
 			>
 				<Providers>
 					<div className="relative flex flex-col h-screen">
 						<Navbar />
-						<main className="container mx-auto max-w-7xl pt-4 px-6 flex-grow">
+						<main className="container mx-auto max-w-7xl px-6 flex-grow">
 							{children}
 						</main>
 					</div>
