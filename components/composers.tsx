@@ -16,18 +16,26 @@ export const ComposersCard = ({source, caption, alt}: Props) => {
 	const handleMouseOut = () => {
 	  setIsHovering(false);
 	};
-  
+    
+    const hoverBrightness = () => {
+        let className = 'rounded-md'
+        if (isHovering) {
+            className += " brightness-50"
+        }
+        return className
+    }
+
 	return (
-        <div>
+        <div className="max-w-xs sm:w-1/3 relative">
             <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
                 <img 
-                    className = "hover:brightness-50" 
+                    className = {hoverBrightness()} 
                     alt= {alt} 
                     src = {source}
                 />
             </div>
             {isHovering && 
-                <p className = "absolute text-white italic top-2 left-2">
+                <p onMouseOver={handleMouseOver} className = "absolute text-white text-center italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                     {caption}
                 </p>
             }

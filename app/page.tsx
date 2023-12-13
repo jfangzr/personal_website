@@ -1,12 +1,13 @@
+'use client'
 import { title, subtitle } from "@/components/primitives";
 import { Image } from "@nextui-org/react";
 
 export default function Home() {
-  return (
+  	return (
     <section>
 		<div className="max-w-3xl mx-auto text-justify">
 			<div className="my-8">
-				<h1 className={title()}>Hi, I am Zhengru (James) Fang!</h1>
+				<h1 className={title()}>Hi, I am James!</h1>
 				<h2 className={subtitle()}>I am a prospective Masters of Computer Science student at UIUC.</h2>
 				
 			</div>
@@ -16,15 +17,20 @@ export default function Home() {
 						alt="Snowy UIUC Night"
 						src="/images/uiuc-snow-night.jpg"
 					/>
-					<p className = "text-center italic text-neutral-700">
-						Welcome to my university. Looking south from University of Illinois Urbana-Champaign (UIUC) in winter at night. From near to far, Illini Union, Main Quad, Foellinger Auditorium, South Quad, and Bell Tower. Isn't it pretty?
+					<p className = "text-center text-sm italic text-neutral-700">
+						Welcome to my university. Looking south from University of Illinois Urbana-Champaign 
+						(UIUC) in winter at night. From near to far, Illini Union, Main Quad, 
+						Foellinger Auditorium, South Quad, and Bell Tower. Isn't it pretty?
 					</p>
 			</div>
 			
 			<div className="my-8">
 				<h1 className={title({ size: 'sm' })}>Current Work</h1>
 				<p className="my-4">
-					I am working on Bioimedge (pronounced bio-image), a zero- and low-code platform for computer vision for biomedical and healthcare purposes. 
+					I am working on Bioimedge (pronounced bio-image), a zero- and low-code platform 
+					for computer vision for biomedical and healthcare purposes. I envision this as a B2B startup
+					working with doctors, researchers, and other businesses with needs for biomedical imaging. 
+					I am looking for motivated, talented people to join as cofounder / engineeers. 
 				</p>
 			</div>
 
@@ -37,7 +43,9 @@ export default function Home() {
 				<div className = 'flex flex-col md:flex-row gap-4 items-center'>
 					<div className = "w-full md:w-1/2 ">
 						<p>
-							I graduated from Upper Saint Clair High School in June 2021. I was an exchange student at École polytechnique fédérale de Lausanne (EPFL) in Lausanne, Vaud, Switzerland from September 2022 to February 2023, pictured on the right.
+							I graduated from Upper Saint Clair High School in June 2021. I was an exchange
+							student at École polytechnique fédérale de Lausanne (EPFL) in Lausanne, 
+							Vaud, Switzerland from September 2022 to February 2023, pictured on the right.
 						</p>
 					</div>
 					<div className = "w-full md:w-1/2">
@@ -64,5 +72,5 @@ export default function Home() {
 			</div>
 		</div>
     </section>
-  );
+ 	);
 }
