@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { render } from "react-dom";
 
 interface Props {
 	source: string;
