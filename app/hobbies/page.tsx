@@ -19,7 +19,7 @@ export default function HobbiesPage() {
 				</p>
 				<br></br>
 				<p className = "my-1">
-				I often read Wikipedia articles when I am bored, on random topics I think about - in history, economics, politics, social currents, and philosophy.   
+				I often read Wikipedia articles when I am bored, on random topics I think about - in history, economics, politics, social currents, and philosophy. 
 				</p>
 			</div>
 			
@@ -31,7 +31,7 @@ export default function HobbiesPage() {
 			</div>
 			<div className="my-8">
 				<h1 className={title({size: "sm"})}>My favorite composers</h1>
-				<h2 className={subtitle()}>Well, I love classical-romantic piano music.</h2>
+				<h2 className={subtitle()}>I love classical piano music. Especially from Romantic Era - 1825 ~ 1900.</h2>
 				<div className = "flex flex-col sm:flex-row gap-4 justify-center items-center">
 					<ComposersCard source="images/Liszt.png" caption = "Franz Liszt" alt = "Painting of Liszt"/>
 					<ComposersCard source="images/Chopin.png" caption = "Frédéric Chopin" alt = "Painting of Chopin"/>
