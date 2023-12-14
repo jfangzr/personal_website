@@ -1,5 +1,6 @@
 import { title, subtitle} from "@/components/primitives";
 import { Image } from "@nextui-org/react";
+import {Link} from "@nextui-org/react";
 
 export default function AboutPage() {
 	return (
@@ -20,7 +21,7 @@ export default function AboutPage() {
 				<div className = "grow text-center">
 					<h2 className ={subtitle()}>Zhengru (James) Fang</h2>
 					<h2 className ={subtitle()}>方正儒</h2>
-					
+					<Link href="/resume.pdf">Resume</Link>
 				</div>
 			</div>
 			<div className="my-8">
