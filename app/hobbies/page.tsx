@@ -34,7 +34,7 @@ export default function HobbiesPage() {
 				<h2 className={subtitle()}>Well, I love classical-romantic piano music.</h2>
 				<div className = "flex flex-col sm:flex-row gap-4 justify-center items-center">
 					<ComposersCard source="images/Liszt.png" caption = "Franz Liszt" alt = "Painting of Liszt"/>
-					<ComposersCard source="images/Chopin.png" caption = "Frederic Chopin" alt = "Painting of Chopin"/>
+					<ComposersCard source="images/Chopin.png" caption = "Frédéric Chopin" alt = "Painting of Chopin"/>
 					<ComposersCard source="images/Beethoven.png" caption = "Ludwig van Beethoven" alt = "Painting of Beethoven"/>
 				</div>
 			</div>
