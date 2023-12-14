@@ -15,7 +15,7 @@ export default function HobbiesPage() {
 				<h1 className={title()}>What do I do for fun, other than nerdy CS stuff?</h1>
 				<h2 className={subtitle()}>Plenty of interesting things. Some nerdy as well.</h2>
 				<p className = "my-1">
-				I love playing piano, playing chess, cooking, working out, biking, hiking, travelling, and learning languages. Travelling and languages go hand-in-hand for me!
+				I love playing piano, playing chess, cooking, working out, biking, hiking, attending cultural events, travelling, and learning languages. Travelling and languages go hand-in-hand for me!
 				</p>
 				<br></br>
 				<p className = "my-1">
