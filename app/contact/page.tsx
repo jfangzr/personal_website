@@ -7,6 +7,7 @@ export default function ContactPage() {
 				<h2 className={subtitle()}>You can reach me by:</h2>
 				<ul className="list-disc list-inside indent-4 my-4">
 					<li>Email: zhengru3 [at] illinois [dot] edu</li>
+					<li><Link href="/resume.pdf">Resume</Link></li>
 					<li><Link href="https://www.linkedin.com/in/james-fang-uiuccs/" className = "m-0">LinkedIn</Link></li>
 					<li><Link href="https://github.com/jamesdiplomat" className = "m-0" >Github</Link></li>
 				</ul>
