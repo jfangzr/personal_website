@@ -28,7 +28,7 @@ export default function TravelsPage() {
 			<div className="my-8">
 				<h1 className={title()}>A tale of wanderlust</h1>
 				<p className = "my-2">
-					As someone who lived in four different countries, I have always been curious to discover the world. When I was young I travelled with my parents. Then I decided to study abroad in Lausanne, Switzerland. I was 18. Travelling to thirteen countries, mostly via rail, instead of 'fulfilling' the wanderlust, only has fuelled it further.
+					As someone who lived in four different countries, I have always been curious to discover the world. When I was young I travelled with my parents. Then I decided to study abroad in Lausanne, Switzerland. I was 18. Travelling to thirteen countries, mostly via rail, instead of fulfilling the wanderlust, only has fuelled it further.
 				</p>
 				<br></br>
 				<p>
@@ -45,7 +45,7 @@ export default function TravelsPage() {
 				<h2 className={subtitle()}>{`${viewContinent}: ${(c as any)[viewContinent].length} countries visited`}</h2>
 				<div className="grid grid-cols-2 md:grid-cols-3 gap-3">
 					{(c as any)[viewContinent].map((item: string[]) => (
-						<CountryCard imageCode={item[1]} country={item[0]} />
+						<CountryCard key={item[0]} country={item[0]} imageCode={item[1]} />
 					))}
 				</div>
 			</div>

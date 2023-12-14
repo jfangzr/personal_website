@@ -33,7 +33,13 @@ export default function AboutPage() {
 				</p>
 				<br></br>
 				<p>
-					I initially picked this for SnapChat, which I no longer use, and this handle also eventually became my handle for Instagram and Github. This is probably one of the things I get asked the most about me - especially since my area of interest and study doesn't have a lot to do with global affairs. But I am still proud to keep it, for that Model UN brought me many friends and the spirit of learning about the big beautiful world. 
+					I initially picked this for SnapChat, which I no longer use, 
+					and this handle also eventually became my handle for Instagram and Github. 
+					This is probably one of the things I get asked the most about me - 
+					especially since my area of interest and study doesn&apos;t 
+					have a lot to do with global affairs. But I am still proud to keep it, 
+					for that Model UN brought me many friends and the spirit of learning 
+					about the big beautiful world. 
 				</p>
 			</div>
 		</div>

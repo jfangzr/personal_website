@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import {Image} from "@nextui-org/react";
 interface Props {
 	source: string;
 	caption: string;
@@ -17,7 +17,7 @@ export const ComposersCard = ({source, caption, alt}: Props) => {
 	};
     
     const hoverBrightness = () => {
-        let className = 'rounded-md'
+        let className = 'rounded-md z-0'
         if (isHovering) {
             className += " brightness-50"
         }
@@ -27,14 +27,14 @@ export const ComposersCard = ({source, caption, alt}: Props) => {
 	return (
         <div className="max-w-xs sm:w-1/3 relative">
             <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                <img 
+                <Image
                     className = {hoverBrightness()} 
                     alt= {alt} 
                     src = {source}
                 />
             </div>
             {isHovering && 
-                <p onMouseOver={handleMouseOver} className = "absolute text-white text-center italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <p onMouseOver={handleMouseOver} className = "absolute text-white text-center italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
                     {caption}
                 </p>
             }

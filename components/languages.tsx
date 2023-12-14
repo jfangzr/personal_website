@@ -20,11 +20,11 @@ export const LanguagesCard = ({lcp}: {lcp: LCProps}) => {
             <div className = "flex flex-col md:flex-row items-center">
                 <div className="w-full md:w-2/5">
                     <ul className="list-disc list-inside indent-4 my-2">
-                        {lcp.languages.map((item) => (<li>{item}</li>))}
+                        {lcp.languages.map((item) => (<li key={item}>{item}</li>))}
                     </ul>
                 </div>
                 <div className="w-full md:w-3/5 my-4 md:my-0 flex gap-8 justify-center">
-                    {lcp.avatarFnames.map((item) => (<Avatar isBordered src={item} size = "lg"/>))}
+                    {lcp.avatarFnames.map((item) => (<Avatar isBordered src={item} key={item} size = "lg"/>))}
                 </div>
             </div>
         </div>

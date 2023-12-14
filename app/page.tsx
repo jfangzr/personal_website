@@ -20,7 +20,7 @@ export default function Home() {
 					<p className = "text-center text-sm italic text-neutral-700">
 						Welcome to my university. Looking south from University of Illinois Urbana-Champaign 
 						(UIUC) in winter at night. From near to far, Illini Union, Main Quad, 
-						Foellinger Auditorium, South Quad, and Bell Tower. Isn't it pretty?
+						Foellinger Auditorium, South Quad, and Bell Tower. Isn&apos;t  pretty?
 					</p>
 			</div>
 			
