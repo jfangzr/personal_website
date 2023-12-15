@@ -10,7 +10,6 @@ Personal webpage by James Fang. Built with Nextjs + NextUI.
 - [Tailwind Variants](https://tailwind-variants.org)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
 
 ## License
 

@@ -1,13 +1,10 @@
 "use client";
 import { title, subtitle } from "@/components/primitives";
 import {ComposersCard} from "@/components/composers"
-import {LCProps, LanguagesCard} from "@/components/languages"
-
+import {LanguagesCard} from "@/components/languages"
+import {lcards} from "@/data/langs"
 
 export default function HobbiesPage() {
-	const flcp = new LCProps("Fluently", ["English", "Mandarin Chinese / 普通话中文", "French / Français"], ["/flag-icons/cn-square.png", "/flag-icons/en-square.png", "/flag-icons/fr-square.jpg"])
-	const blcp = new LCProps("Basic", ["Spanish / Español", "Italian / Italiano"], ["/flag-icons/es-square.png", "/flag-icons/it-square.png"])
-	const llcp = new LCProps("Learning", ["Polish / Polski", "Ukrainian / Українська"], ["/flag-icons/pol-square.png", "/flag-icons/ukr-square.png"])
 
 	return (
 		<div className="max-w-3xl mx-auto text-justify">
@@ -25,13 +22,13 @@ export default function HobbiesPage() {
 			
 			<div className="my-8">
 				<h1 className={title({size: "sm"})}>Languages I (want to) speak</h1>
-				<LanguagesCard lcp={flcp}/>
-				<LanguagesCard lcp={blcp}/>
-				<LanguagesCard lcp={llcp}/>
+				<LanguagesCard lcp={lcards["Fluently"]}/>
+				<LanguagesCard lcp={lcards["Basic"]}/>
+				<LanguagesCard lcp={lcards["Learning"]}/>
 			</div>
 			<div className="my-8">
 				<h1 className={title({size: "sm"})}>My favorite composers</h1>
-				<h2 className={subtitle()}>I love classical piano music. Especially from Romantic Era: 1825 ~ 1900.</h2>
+				<h2 className={subtitle()}>I love classical piano music. Especially from Romantic Era: 1825 - 1900.</h2>
 				<div className = "flex flex-col sm:flex-row gap-4 justify-center items-center">
 					<ComposersCard source="images/Liszt.png" caption = "Franz Liszt" alt = "Painting of Liszt"/>
 					<ComposersCard source="images/Chopin.png" caption = "Frédéric Chopin" alt = "Painting of Chopin"/>

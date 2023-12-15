@@ -2,9 +2,21 @@
 import { useState } from 'react';
 import {subtitle, title } from "@/components/primitives";
 import {Button, Image, Card, CardBody, CardFooter} from "@nextui-org/react";
-import * as c from "@/public/data/countries.json"
+import * as c from "@/data/countries.json"
+
+
+function getFlagText(setFlag: (flag: string) => void, country: string){
+	const cname = country.toLowerCase()
+	return fetch(`https://studies.cs.helsinki.fi/restcountries/api/name/${cname}`)
+				.then(response => response.json())
+				.then(data => setFlag(data.flag))
+}
+
+
 
 const CountryCard = ({imageCode, country}: {imageCode: string, country: string}) => {
+	const [flag, setFlag] = useState('');
+	const flag_ = getFlagText(setFlag, country)
 	return (
 		<div>
 			<Card>
@@ -12,7 +24,7 @@ const CountryCard = ({imageCode, country}: {imageCode: string, country: string})
 					<Image src={`https://source.unsplash.com/${imageCode}`} alt={`hPicture of ${country}`}/>
 				</CardBody>
 				<CardFooter>
-					<p> {country} </p>
+					<p>{country} {flag}</p>
 				</CardFooter>
 			</Card>
 		</div>
