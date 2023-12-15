@@ -5,12 +5,17 @@ import {useState, useEffect} from 'react'
 
 export default function Home() {
 	
-	const [onMobile, setOnMobile] = useState(false)
-	
+	const [isMobile, setIsMobile] = useState(false)
 	useEffect(() => {
-		setOnMobile(window.innerWidth <= 768)
-	}, [])
-	
+        const onResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        }
+        window.addEventListener("resize", onResize);
+        return () => {
+            window.removeEventListener("resize", onResize);
+        }
+    }, []);
+
   	return (
     <section>
 		<div className="max-w-3xl mx-auto text-justify">
@@ -54,7 +59,7 @@ export default function Home() {
 							I graduated from Upper Saint Clair High School in June 2021. I was an exchange
 							student at École polytechnique fédérale de Lausanne (EPFL) in Lausanne, 
 							Vaud, Switzerland from September 2022 to February 2023, pictured 
-							{onMobile ? " below" : " on the right"}.
+							{isMobile ? " below" : " on the right"}.
 						</p>
 					</div>
 					<div className = "w-full md:w-1/2">
