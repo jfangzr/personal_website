@@ -18,9 +18,6 @@ import {
 	GithubIcon,
 } from "@/components/icons";
 
-import { Logo } from "@/components/icons";
-import {useState} from "react"
-
 export const Navbar = () => {
 	return (
 		<NextUINavbar maxWidth="xl" position="sticky">
