@@ -6,6 +6,7 @@ export const siteConfig = {
 	navItems: [
 		{ label: "Home", href: "/"},
 		{ label: "About", href: "/about"},
+		{ label: "Blog", href: "/blog"},
 		{ label: "Contact", href: "/contact"},
 		{ label: "Hobbies", href: "/hobbies"},
 		{ label: "Travels", href: "/travels"},
@@ -13,6 +14,7 @@ export const siteConfig = {
 	navMenuItems: [
 		{ label: "Home", href: "/"},
 		{ label: "About", href: "/about"},
+		{ label: "Blog", href: "/about"},
 		{ label: "Contact", href: "/contact"},
 		{ label: "Hobbies", href: "/hobbies"},
 		{ label: "Travels", href: "/travels"},
