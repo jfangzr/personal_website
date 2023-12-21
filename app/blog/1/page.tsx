@@ -32,7 +32,7 @@ export default function ContactPage() {
 					Overloading requires special permissions granted by, I believe, the dean of the college, 
 					so most students would be taking between 12 and 18 credit hours. To show you how expensive 
 					a credit hour is, let&apos;s assume 18 credit hours, the largest possible denominator under
-					normal circumstances. Multiply this by two, we get 36 credit hours per semester.
+					normal circumstances. Multiply this by two, we get 36 credit hours per academic year.
 				</p>
 				<div className = "my-8">
 					<h2 className = {subtitle()}>LAS Rate</h2>
