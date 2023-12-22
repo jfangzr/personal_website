@@ -26,7 +26,7 @@ export default function ContactPage() {
 					You then set the continent that you want to study abroad at. In this case, I wanted to study
 					abroad in Europe, preferably at a premier Western European institution. Yes, I am not really 
 					differentiating myself from the other study abroad students this way, going the traditional way.
-					I looked at places where I didn&apos;t want to go (British Isles), and wrote down the schools I was 
+					I excluded places where I didn&apos;t want to go (British Isles), and wrote down the schools I was 
 					really interested in. I went to 
 					the <Link href = "https://my.engr.illinois.edu/login.asp?/studyabroadcourses/index.asp">course approval database</Link>,
 					and found four institutions with a lot of past students transferring courses that I wanted:
