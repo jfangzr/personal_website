@@ -14,6 +14,7 @@ export default function BlogPage() {
 				<h1 className={title()}>Welcome to my blog!</h1>
 				<h2 className={subtitle()}>Here I post thoughts that hopefully inspire wisdom.</h2>
 				<ul className="list-disc list-inside indent-4 my-4">
+					<BlogLinker title="3. Studying abroad: the preparation" subpage = "3"/>
 					<BlogLinker title="2. Blessings from college rejections" subpage = "2"/>
 					<BlogLinker title="1. Value of a credit hour" subpage = "1"/>
 				</ul>

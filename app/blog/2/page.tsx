@@ -108,7 +108,9 @@ export default function ContactPage() {
 					Then I had the good fortune of studying abroad for much of my second year, in Lausanne, Switzerland. 
 					I used EPFL classes to fulfill my remaining requirements in the fall, such that I can have half of spring semester 
 					dedicated to travelling around Europe. I learned to figure out life by myself, doing more chores, and improved my 
-					French significantly as well. 
+					French significantly as well. If I went to another university, I don&apos;t think I could have studied 
+					abroad and knocked out my remaining graduation requirements by the spring semester, leaving me 
+					with a lot of time to pursue whatever I wanted to pursue. 
 				</p>
 				<p className = "my-4">
 					And all of this was while saving my parents (and future me) over $150k in cost of attendance. 
