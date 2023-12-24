@@ -28,7 +28,7 @@ export default function Home() {
 			<div className = "w-full md:w-3/4 mx-auto my-8">
 					<Image
 						alt="Snowy UIUC Night"
-						src="/images/uiuc-snow-night.jpg"
+						src="/images/uiuc-snow-night.webp"
 					/>
 					<p className = "text-center text-sm italic text-neutral-700">
 						Welcome to my university. Looking south from University of Illinois Urbana-Champaign 
@@ -65,7 +65,7 @@ export default function Home() {
 					<div className = "w-full md:w-1/2">
 						<Image
 							alt="EPFL Campus"
-							src="/images/epfl.jpg"
+							src="/images/epfl.webp"
 						/>
 					</div>
 				</div>
