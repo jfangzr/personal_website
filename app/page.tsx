@@ -65,7 +65,7 @@ export default function Home() {
 					<div className = "w-full md:w-1/2">
 						<Image
 							alt="EPFL Campus"
-							src="/images/epfl.png"
+							src="/images/epfl.jpg"
 						/>
 					</div>
 				</div>
