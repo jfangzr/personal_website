@@ -1,3 +1,4 @@
+"use client";
 import {
 	Navbar as NextUINavbar,
 	NavbarContent,
@@ -17,6 +18,11 @@ import clsx from "clsx";
 import {
 	GithubIcon,
 } from "@/components/icons";
+
+const clickNavbar = () => {
+	const element = document.getElementById("navbarmenutoggle")
+	element?.click()
+}
 
 export const Navbar = () => {
 	return (
@@ -60,7 +66,7 @@ export const Navbar = () => {
 				<Link isExternal href={siteConfig.links.github} aria-label="Github">
 					<GithubIcon className="text-default-500" />
 				</Link>
-				<NavbarMenuToggle />
+				<NavbarMenuToggle id="navbarmenutoggle"/>
 			</NavbarContent>
 
 			<NavbarMenu>
@@ -71,6 +77,7 @@ export const Navbar = () => {
 								color="foreground"
 								href={item.href}
 								size="lg"
+								onPress={clickNavbar}
 							>
 								{item.label}
 							</Link>
