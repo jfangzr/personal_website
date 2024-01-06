@@ -1,6 +1,6 @@
 "use client"
 import { title, subtitle } from "@/components/primitives";
-import { Image } from "@nextui-org/react";
+import { Image, Link} from "@nextui-org/react";
 import {useState, useEffect} from "react"
 
 export default function Home() {
@@ -40,7 +40,7 @@ export default function Home() {
 			<div className="my-8">
 				<h1 className={title({ size: "sm" })}>Current Work</h1>
 				<p className="my-4">
-					I am working on PrepStar AI (launching soon!), an interactive AI-based practice exam engine for students in high school. This 
+					I am working on PrepStar AI (<Link href = "https://www.prepstar.io">www.prepstar.io</Link>), an interactive AI-based practice exam engine for students in high school. This 
 					startup stems from my experiences studying for AP/IB exams in high school, where I really wished that there 
 					were more practice materials that would&apos;ve saved me time. The practice exams are generated with state-of-the-art natural language processing 
 					(NLP) models, calibrated at college-exam level or slightly harder to make sure students are prepared for exams.
