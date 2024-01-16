@@ -56,7 +56,7 @@ export default function Home() {
 			<div className="my-8">
 				<h1 className={title({ size: "sm" })}>Education</h1>
 				<ul className="list-disc list-inside indent-4 my-4">
-					<li>Master of Computer Science (MCS), UIUC, Jan 2024 - May 2025</li>
+					<li>Master of Computer Science (MCS), UIUC, Aug 2024 - May 2025</li>
 					<li>Bachelor of Science (B.S.), Computer Science, UIUC, Aug 2021 - May 2023</li>
 				</ul>
 				<div className = "flex flex-col md:flex-row gap-4 items-center">
