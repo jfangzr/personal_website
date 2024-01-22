@@ -4,6 +4,7 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
+import { Analytics } from '@vercel/analytics/react';
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 
@@ -45,6 +46,7 @@ export default function RootLayout({
 						</main>
 					</div>
 				</Providers>
+				<Analytics />
 			</body>
 		</html>
 	);
