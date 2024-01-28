@@ -14,6 +14,8 @@ const blogTitles: string[] = [
 	"Studying abroad: the preparation",
 	"PrepStar AI is live!",
 	"Exponential Growth",
+	"Reforming American College Admissions: Part I",
+	"Reforming American College Admissions: Part II"
 ]
 export default function BlogPage() {
 	return (
