@@ -91,6 +91,24 @@ export default function Home() {
 					<li className = "ml-12">Still trying to get better at it, this personal page is my exercise!</li>
 				</ul>
 			</div>
+			<div className="my-8">
+				<h1 className={title()}>Quotes I think about:</h1>
+				<p className="my-2">
+					<span className="italic">&quot;You know, again, it would be great if you were number one in the world, but like, 
+					people are gonna respect what you did, and if you are proud in your heart, of the work you did,
+					then you will view this as a positive.&quot; </span>
+				</p>
+				<p className="my-2">
+					- Dalton Caldwell, on putting everything in as a startup founder on a business / product
+				</p>
+				<br></br>
+				<p className="my-2">
+					<span className="italic">&quot;You never lose if you don&apos;t quit.&quot; </span>
+				</p>
+				<p className="my-2">
+					- My good friend Declan from high school 
+				</p>
+			</div>
 		</div>
     </section>
  	);
