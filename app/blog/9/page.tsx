@@ -106,22 +106,27 @@ export default function ContactPage() {
 					<li>Italy</li>
 					<li>Switzerland</li>
 					<li>Slovenia</li>
+					<br></br>
 					<li>Croatia</li>
 					<li>Bosnia</li>
-					<li>Switzerland</li>
 					<li>(Serbia?)</li>
 					<li>Hungary</li>
 					<li>Austria</li>
+					<br></br>
+					
 					<li>(Slovakia?)</li>
 					<li>Czech Republic</li>
 					<li>Poland</li>
 					<li>Latvia</li>
 					<li>Lithuania</li>
+					<br></br>
+					
 					<li>Estonia</li>
+					<li>Finland</li>
 					<li>Denmark</li>
 				</ul>
 				<p className = "my-4">
-					Ahh, what a time to be alive, with such a beautiful world at our fingertips, cities easily connected 
+					16 countries for certain, 18 potentially. Ahh, what a time to be alive, with such a beautiful world at our fingertips, cities easily connected 
 					to one another. Revisions will probably be made to add stops along the way, or if I want to go crazy, add &quot;entire arcs&quot;
 					to this itinerary. Southern Italian cities such as Bari & Lecce in Puglia and Taormina in Sicilia are looking real 
 					fine right now...
