@@ -118,7 +118,7 @@ export default function ContactPage() {
 					<li>Latvia</li>
 					<li>Lithuania</li>
 					<li>Estonia</li>
-					<li>Copenhagen</li>
+					<li>Denmark</li>
 				</ul>
 				<p className = "my-4">
 					Ahh, what a time to be alive, with such a beautiful world at our fingertips, cities easily connected 
