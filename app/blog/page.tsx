@@ -15,7 +15,9 @@ const blogTitles: string[] = [
 	"PrepStar AI is live!",
 	"Exponential Growth",
 	"Reforming American College Admissions: Part I",
-	"Reforming American College Admissions: Part II"
+	"Reforming American College Admissions: Part II",
+	"Why Startups Draw Me", 
+	"A Massive Romantic European Itinerary"
 ]
 export default function BlogPage() {
 	return (
