@@ -20,15 +20,17 @@ const blogTitles: string[] = [
 	"A Massive Romantic European Itinerary",
 	"How to find and listen to good advice"
 ]
+
 export default function BlogPage() {
+	const btr = blogTitles.slice().reverse();
 	return (
 		<div className="max-w-3xl mx-auto text-justify">
 			<div className="my-8">
 				<h1 className={title()}>Welcome to my blog!</h1>
 				<h2 className={subtitle()}>Here I post thoughts that hopefully inspire wisdom.</h2>
 				<ul className="list-disc list-inside indent-4 my-4">
-					{blogTitles.reverse().map((item, idx) => 
-						<BlogLinker title={item} subpage={String(blogTitles.length - idx)} key={idx}/>)}
+					{btr.map((item, idx) => 
+						<BlogLinker title={item} subpage={String(btr.length - idx)} key={idx}/>)}
 				</ul>
 			</div>
 		</div>
