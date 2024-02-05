@@ -17,7 +17,8 @@ const blogTitles: string[] = [
 	"Reforming American College Admissions: Part I",
 	"Reforming American College Admissions: Part II",
 	"Why Startups Draw Me", 
-	"A Massive Romantic European Itinerary"
+	"A Massive Romantic European Itinerary",
+	"How to find and listen to good advice"
 ]
 export default function BlogPage() {
 	return (
