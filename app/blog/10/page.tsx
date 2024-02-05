@@ -74,6 +74,10 @@ export default function ContactPage() {
 				<p className = "my-4 font-bold">
 					4. It is as much about the person as it is about the advice given. 	
 				</p>
+				<p className = "my-4">
+					This is something that I&apos;ll let you think about. In short: the people themselves - especially their character - 
+					really, really matter. 
+				</p>
 				<p className= "my-4 border-gray-500 border-t-2">
 				</p>
 				<p className = "my-4">
