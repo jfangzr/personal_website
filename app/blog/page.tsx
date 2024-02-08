@@ -18,7 +18,8 @@ const blogTitles: string[] = [
 	"Reforming American College Admissions: Part II",
 	"Why Startups Draw Me", 
 	"A Massive Romantic European Itinerary",
-	"How to find and listen to good advice"
+	"How to find and listen to good advice",
+	"My beliefs on AI"
 ]
 
 export default function BlogPage() {
