@@ -19,7 +19,8 @@ const blogTitles: string[] = [
 	"Why Startups Draw Me", 
 	"A Massive Romantic European Itinerary",
 	"How to find and listen to good advice",
-	"My beliefs on AI"
+	"My beliefs on AI",
+	"How a college student like me shop at Costco"
 ]
 
 export default function BlogPage() {
