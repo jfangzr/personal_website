@@ -9,7 +9,8 @@ export default function ContactPage() {
 			<div className="my-4">
 				<h1 className={title()}>12. How a college student like me shop at Costco</h1>
 				<p className = "my-4">
-					I&apos;ll start with some disclaimers. I eat <span className="italic">a lot.</span> Furthermore, I am living 
+					I&apos;ll start with some disclaimers. I eat <span className="italic">a lot</span> especially since I go to the gym 
+					three to four times a week. Furthermore, I am living 
 					with three roommates that are also willing to split the expenses of groceries four ways for some items. This 
 					arrangement might work very differently depending on how many people you live with, your food habits (both in
 					terms of taste and quantity), and how often you can access a car to go to Costco. I spend quite a bit of money on
@@ -70,6 +71,26 @@ export default function ContactPage() {
 					<li>Laundry Detergent</li>
 					<li>Dishwasher Detergent</li>
 					<li>Dish Soap</li>
+				</ul>
+				<h2 className={subtitle()}>Staples</h2>
+				<ul className="list-disc list-inside indent-4 my-2">
+					<li>Rice (usually from Southeast Asia)</li>
+					<li>Pasta (mostly spaghetti)</li>
+				</ul>
+				<h2 className={subtitle()}>Toiletries</h2>
+				<ul className="list-disc list-inside indent-4 my-2">
+					<li>Toothpaste / Mouthwash</li>
+					<li>Razor Blades</li>
+					<li>Electric Toothbrush Brush Heads</li>
+				</ul>
+				<h2 className={subtitle()}>Sweet Snacks</h2>
+				<ul className="list-disc list-inside indent-4 my-2">
+					<li>Godiva Belgian Chocolate Ganache Hearts</li>
+				</ul>
+				<h2 className={subtitle()}>Dinner After</h2>
+				<ul className="list-disc list-inside indent-4 my-2">
+					<li>Costco Pizza</li>
+					<li>Rotisserie Chicken</li>
 				</ul>
 				<p className = "my-4">
 					For a lot of the cooking ingredients, I would head over to the local Asian grocery store
