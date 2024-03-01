@@ -40,7 +40,15 @@ export default function Home() {
 			<div className="my-8">
 				<h1 className={title({ size: "sm" })}>Current Work</h1>
 				<p className="my-4">
-					I am working on PrepStar AI (<Link href = "https://www.prepstar.io">www.prepstar.io</Link>), an interactive AI-based practice exam engine for students in high school. This 
+					I have just launched (<Link href = "https://www.trialslookup.com">www.trialslookup.com</Link>), a LLM-based search engine for clinical trials. 
+					The goal of this project is to help doctors and patients find clinical trials that are a match based on patient demographics, 
+					conditions, and clinical phenotypes. This search engine is much faster and more precise than 
+					the outdated <Link href = "https://www.clinicaltrials.gov">ClinicalTrials.gov</Link> website, which take a long time to just query, a long time to just 
+					formulate the search, and much, much longer to sift through the clinical trials that are not a good fit for the patient. 
+					
+				</p>
+				<p className="my-4">
+					I am concurrently working on PrepStar AI (<Link href = "https://www.prepstar.io">www.prepstar.io</Link>), an interactive AI-based practice exam engine for students in high school. This 
 					startup stems from my experiences studying for AP/IB exams in high school, where I really wished that there 
 					were more practice materials that would&apos;ve saved me time. The practice exams are generated with state-of-the-art natural language processing 
 					(NLP) models, calibrated at college-exam level or slightly harder to make sure students are prepared for exams.
