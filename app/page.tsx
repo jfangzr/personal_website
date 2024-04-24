@@ -4,7 +4,6 @@ import { Image, Link} from "@nextui-org/react";
 import {useState, useEffect} from "react"
 
 export default function Home() {
-	
 	const [isMobile, setIsMobile] = useState(false)
 	useEffect(() => {
         const onResize = () => {
@@ -43,9 +42,8 @@ export default function Home() {
 					I have just launched (<Link href = "https://www.trialslookup.com">www.trialslookup.com</Link>), a LLM-based search engine for clinical trials. 
 					The goal of this project is to help doctors and patients find clinical trials that are a match based on patient demographics, 
 					conditions, and clinical phenotypes. This search engine is much faster and more precise than 
-					the outdated <Link href = "https://www.clinicaltrials.gov">ClinicalTrials.gov</Link> website, which take a long time to just query, a long time to just 
-					formulate the search, and much, much longer to sift through the clinical trials that are not a good fit for the patient. 
-					
+					the outdated <Link href = "https://www.clinicaltrials.gov">ClinicalTrials.gov</Link> website, which takes a long time to just query, a longer time to just 
+					formulate the search, and much, much more time to sift through the clinical trials that are not a good fit for the patient. 
 				</p>
 				<p className="my-4">
 					I am concurrently working on PrepStar AI (<Link href = "https://www.prepstar.io">www.prepstar.io</Link>), an interactive AI-based practice exam engine for students in high school. This 
