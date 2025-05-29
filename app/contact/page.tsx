@@ -28,6 +28,7 @@ export default function ContactPage() {
 					<li className="mt-8">Email: zhengru3 [at] illinois [dot] edu</li>
 					<li><Link href="https://www.linkedin.com/in/james-fang-uiuccs/">LinkedIn</Link></li>
 					<li><Link href="https://github.com/jfangzr">Github</Link></li>
+					<li><Link href="https://x.com/polymath_james">Twitter / X</Link></li>
 				</ul>
 			</div>	
 		</div>

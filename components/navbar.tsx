@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { siteConfig } from "@/config/site";
-import { GithubIcon } from "@/components/icons";
+import { GithubIcon, TwitterIcon} from "@/components/icons";
 import Link from "next/link";
 
 export function Navbar() {
@@ -27,6 +27,9 @@ export function Navbar() {
         <div className="hidden md:flex items-center">
           <a href={siteConfig.links.github} target="_blank" rel="noreferrer" className="p-2">
             <GithubIcon />
+          </a>
+          <a href={siteConfig.links.twitter} target="_blank" rel="noreferrer" className="p-2">
+            <TwitterIcon />
           </a>
         </div>
 

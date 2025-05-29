@@ -23,5 +23,6 @@ export const siteConfig = {
 	],
 	links: {
 		github: "https://github.com/jfangzr/",
+		twitter: "https://x.com/polymath_james"
 	},
 };
