@@ -1,16 +1,10 @@
 import {subtitle } from "@/components/primitives";
-import {Avatar} from "@nextui-org/react";
+import Image from "next/image";
 
-export class LCProps {
+export interface LCProps {
 	fluency: string;
 	languages: string[];
     avatarFnames: string[];
-
-    constructor(fluency: string, languages: string[], avatarFnames: string[]) {
-        this.fluency = fluency;
-        this.languages = languages;
-        this.avatarFnames = avatarFnames;
-    }
 }
 
 export const LanguagesCard = ({lcp}: {lcp: LCProps}) => {
@@ -23,9 +17,13 @@ export const LanguagesCard = ({lcp}: {lcp: LCProps}) => {
                         {lcp.languages.map((item) => (<li key={item}>{item}</li>))}
                     </ul>
                 </div>
-                <div className="w-full md:w-3/5 my-4 md:my-0 flex gap-8 justify-center">
-                    {lcp.avatarFnames.map((item) => (<Avatar isBordered src={item} key={item} size = "lg"/>))}
-                </div>
+                {<div className="w-full md:w-3/5 my-4 md:my-0 flex gap-8 justify-center">
+                    {lcp.avatarFnames.map((item) => (
+                        <div key={item} className="w-16 h-16 border-black border-2 rounded">
+                            <Image src={item} height={64} width={64} alt="country"/>
+                        </div>
+                    ))}
+                </div>}
             </div>
         </div>
     );

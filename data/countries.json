@@ -1,33 +1,33 @@
 {
     "Europe": [
-        ["Austria", "x5icsOgc7Lw"],
-        ["Belgium", "dq2yziptkFU"],
-        ["Czech Republic", "I0TFurj83AY"],
-        ["France", "CB0Qrf8ib4I"],
-        ["Germany", "AMfk_tH8BLk"],
-        ["Hungary", "ezUDjYy17EA"],
-        ["Ireland", "JXX_GonMj5s"],
-        ["Italy", "pG9_daVeznc"],
-        ["Liechtenstein", "DxgjKKPhTi0"],
-        ["Luxembourg", "QfAI8FJNdfI"],
-        ["Netherlands", "4ZtYoQavCVI"],
-        ["Poland", "6etLdb_G99w"],
-        ["Slovakia", "uUhi8gyvA_0"],
-        ["Spain", "an5ddizphPI"],
-        ["Switzerland", "S3zopd8_5OY"],
-        ["United Kingdom", "1Z7QDZqT2QQ"],
-        ["Vatican City", "Vabd0eaLbBA"]
+        ["Austria", "austria.jpg"],
+        ["Belgium", "belgium.jpg"],
+        ["Czech Republic", "czech-republic.jpg"],
+        ["France", "france.jpg"],
+        ["Germany", "germany.jpg"],
+        ["Hungary", "hungary.jpg"],
+        ["Ireland", "ireland.jpg"],
+        ["Italy", "italy.jpg"],
+        ["Liechtenstein", "liechtenstein.jpg"],
+        ["Luxembourg", "luxembourg.jpg"],
+        ["Netherlands", "netherlands.jpg"],
+        ["Poland", "poland.jpg"],
+        ["Slovakia", "slovakia.jpg"],
+        ["Spain", "spain.jpg"],
+        ["Switzerland", "switzerland.jpg"],
+        ["United Kingdom", "united-kingdom.jpg"],
+        ["Vatican City", "vatican-city.jpg"]
     ], 
 
     "Asia": [
-        ["China", "5UjoDKlGETs"],
-        ["Hong Kong", "HEBv6leavn8"],
-        ["Singapore", "EjvaknMYDDs"]
+        ["China", "china.jpg"],
+        ["Hong Kong", "hong-kong.jpg"],
+        ["Singapore", "singapore.jpg"]
     ], 
 
     "North America": [
-        ["Canada", "tQ4ChsgPxiA"], 
-        ["Mexico", "6ut9rukaWBc"],
-        ["United States", "LKKRr0Wi0rA"]
+        ["Canada", "canada.jpg"], 
+        ["Mexico", "mexico.jpg"],
+        ["United States", "united-states.jpg"]
     ]
 }

@@ -1,90 +1,72 @@
 "use client";
-import {
-	Navbar as NextUINavbar,
-	NavbarContent,
-	NavbarMenu,
-	NavbarMenuToggle,
-	NavbarBrand,
-	NavbarItem,
-	NavbarMenuItem,
-} from "@nextui-org/navbar";
-import { Link } from "@nextui-org/link";
-
-import { link as linkStyles } from "@nextui-org/theme";
-
+import { useState } from "react";
 import { siteConfig } from "@/config/site";
-import NextLink from "next/link";
-import clsx from "clsx";
-import {
-	GithubIcon,
-} from "@/components/icons";
+import { GithubIcon } from "@/components/icons";
+import Link from "next/link";
 
-const clickNavbar = () => {
-	const element = document.getElementById("navbarmenutoggle")
-	element?.click()
+export function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  return (
+    <nav className="w-full py-3 px-4 border-b border-gray-200">
+      <div className="container mx-auto flex justify-between items-center">
+        <Link href="/">
+          <h1 className="text-xl font-bold">James Fang</h1>
+        </Link>
+
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex space-x-6">
+          {siteConfig.navItems.map((item) => (
+            <Link key={item.href} href={item.href}>
+              {item.label}
+            </Link>
+          ))}
+        </div>
+
+        {/* Social Links */}
+        <div className="hidden md:flex items-center">
+          <a href={siteConfig.links.github} target="_blank" rel="noreferrer" className="p-2">
+            <GithubIcon />
+          </a>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button 
+          className="md:hidden"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            {isMenuOpen ? (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            )}
+          </svg>
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="md:hidden absolute w-full bg-white z-50 border-b border-gray-200">
+          <div className="container mx-auto py-2">
+            {siteConfig.navMenuItems.map((item) => (
+              <Link key={item.href} href={item.href}>
+                <div className="block py-2 px-4 hover:bg-gray-100">{item.label}</div>
+              </Link>
+            ))}
+            <a 
+              href={siteConfig.links.github} 
+              target="_blank" 
+              rel="noreferrer"
+              className="flex items-center py-2 px-4 hover:bg-gray-100"
+            >
+              <GithubIcon className="mr-2" />
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      )}
+    </nav>
+  );
 }
 
-export const Navbar = () => {
-	return (
-		<NextUINavbar maxWidth="xl" position="sticky">
-			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-				<NavbarBrand as="li" className="gap-3 max-w-fit">
-					<NextLink className="flex justify-start items-center gap-1" href="/">
-						<p className="font-bold text-inherit">James Fang</p>
-					</NextLink>
-				</NavbarBrand>
-				<ul className="hidden sm:flex gap-4 justify-start ml-2">
-					{siteConfig.navItems.map((item) => (
-						<NavbarItem key={item.href}>
-							<NextLink
-								className={clsx(
-									linkStyles({ color: "foreground" }),
-									"data-[active=true]:text-primary data-[active=true]:font-medium"
-								)}
-								color="foreground"
-								href={item.href}
-							>
-								{item.label}
-							</NextLink>
-						</NavbarItem>
-					))}
-				</ul>
-			</NavbarContent>
-
-			<NavbarContent
-				className="hidden sm:flex basis-1/5 sm:basis-full"
-				justify="end"
-			>
-				<NavbarItem className="hidden sm:flex gap-2">
-					<Link isExternal href={siteConfig.links.github} aria-label="Github">
-						<GithubIcon className="text-default-500" />
-					</Link>
-				</NavbarItem>
-			</NavbarContent>
-
-			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-				<Link isExternal href={siteConfig.links.github} aria-label="Github">
-					<GithubIcon className="text-default-500" />
-				</Link>
-				<NavbarMenuToggle id="navbarmenutoggle"/>
-			</NavbarContent>
-
-			<NavbarMenu>
-				<div className="mx-4 mt-2 flex flex-col gap-2">
-					{siteConfig.navMenuItems.map((item, index) => (
-						<NavbarMenuItem key={`${item}-${index}`}>
-							<Link
-								color="foreground"
-								href={item.href}
-								size="lg"
-								onPress={clickNavbar}
-							>
-								{item.label}
-							</Link>
-						</NavbarMenuItem>
-					))}
-				</div>
-			</NavbarMenu>
-		</NextUINavbar>
-	);
-};

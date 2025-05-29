@@ -1,120 +1,70 @@
 "use client"
 import { title, subtitle } from "@/components/primitives";
-import { Image, Link} from "@nextui-org/react";
-import {useState, useEffect} from "react"
+import {BlueLink as Link} from "@/components/link" ;
 
 export default function Home() {
-	const [isMobile, setIsMobile] = useState(false)
-	useEffect(() => {
-        const onResize = () => {
-            setIsMobile(window.innerWidth <= 768);
-        }
-        window.addEventListener("resize", onResize);
-        return () => {
-            window.removeEventListener("resize", onResize);
-        }
-    }, []);
-
   	return (
     <section>
-		<div className="max-w-3xl mx-auto text-justify">
-			<div className="my-8">
-				<h1 className={title()}>Hi, I am James Fang!</h1>
-				<h2 className={subtitle()}>I am a prospective Master of Computer Science student at UIUC.</h2>
-				
+		<div className="max-w-4xl mx-auto">
+			<div className="flex flex-col gap-6 my-16">
+				<h1 className={title()}>Hi, I am James!</h1>
+				<p>I&apos;m a fullstack engineer.  
+          My favorite part of fullstack engineering is probably system design, as I love architecting end-to-end
+          applications and taking ownership of projects. I am primarily interested in building LLM-based tools. My
+          second favorite part about fullstack engineering is about making LLMs, both general-purposed and fined-tuned models, 
+          generate truly useful output. 
+        </p>
+        <p>
+          These problems involve gathering high-quality inputs and contexts, 
+          giving LLMs clear instructions, and structuring algorithmic/agentic workflows. 
+          My hope is that the outputs produced from LLMs 1) opens up novel, valuable applications and/or 
+          2) matches that of highly-trained, highly-skilled humans. 
+        </p>
+        <p>
+          My current tech stack primarily is NextJS, TypeScript, TailwindCSS, though I especially am open to 
+          experimenting with different tools and languages (i.e. Scala, ProtoBuf) to introduce or 
+          strengthen correctness guarantees on my work. I often think about the social and economic impact of my applications.
+          I want to build things that help people and society. 
+        </p>
+				<p> 
+          As a fullstack engineer, I am interested in learning and researching other disciplines that make 
+          fullstack applications performant, reliable, adaptable, and scalable. These disciplines include:
+        </p>
+        <ul className="list-disc list-outside ml-8 space-y-1">
+          <li>Software Engineering Practices</li>
+          <li>Machine Learning</li>
+          <li className="ml-8">Natural Language Processing / LLMs</li>
+          <li className="ml-8">Computer Vision</li>
+          <li>Data Science</li>
+          <li>Computer Security</li>
+          <li>UI / UX and Graphic Design</li>
+          <li>
+            Theoretical Computer Science
+          </li>
+          <li className="ml-8">Algorithms and Data Structure Design</li>
+          <li>Programming Languages (i.e. functional programming)</li>
+        </ul>
+        <p>
+          I enjoy startups for their dynamism. I love the freedom to set as high technical bars as I want for my work and pick problems that I find interesting.
+          I love approaching problems from a very formal and theoretical manner. I especially am open to experimenting with different tools and languages (i.e. Scala) to introduce or strengthen correctness guarantees on my work.
+        </p>
+        <p>
+          In the past, I built multiple startup applications, where I performed all of the technical work. Among them were:
+        </p>
+        <ul className="list-disc list-outside ml-8 space-y-1">
+          <li>
+            <Link href="https://rxjot.com" newPage={true}>Rx Jot</Link>, a LLM-based tool for doctors to write medical necessity and appeal letters for prior authorization
+          </li>
+          <li>
+            <Link href="https://prepstar.io" newPage={true}>PrepStar</Link>, a LLM-based tool to help students with practicing for AP exams
+          </li>
+          <li>
+            <Link href="https://trialslookup.com" newPage={true}>TrialsLookup</Link>, a semantic search engine for doctors to find clinical trials for their patients
+          </li>
+        </ul>
+        
 			</div>
 
-			<div className = "w-full md:w-3/4 mx-auto my-8">
-					<Image
-						alt="Snowy UIUC Night"
-						src="/images/uiuc-snow-night.webp"
-					/>
-					<p className = "text-center text-sm italic text-neutral-700 mt-1">
-						Welcome to my university. Looking south from University of Illinois Urbana-Champaign 
-						(UIUC) in winter at night. From near to far, Illini Union, Main Quad, 
-						Foellinger Auditorium, South Quad, and Bell Tower. Isn&apos;t it pretty?
-					</p>
-			</div>
-			
-			<div className="my-8">
-				<h1 className={title({ size: "sm" })}>Current Work</h1>
-				<p className="my-4">
-					I have just launched (<Link href = "https://www.trialslookup.com">www.trialslookup.com</Link>), a LLM-based search engine for clinical trials. 
-					The goal of this project is to help doctors and patients find clinical trials that are a match based on patient demographics, 
-					conditions, and clinical phenotypes. This search engine is much faster and more precise than 
-					the outdated <Link href = "https://www.clinicaltrials.gov">ClinicalTrials.gov</Link> website, which takes a long time to just query, a longer time to just 
-					formulate the search, and much, much more time to sift through the clinical trials that are not a good fit for the patient. 
-				</p>
-				<p className="my-4">
-					I am concurrently working on PrepStar AI (<Link href = "https://www.prepstar.io">www.prepstar.io</Link>), an interactive AI-based practice exam engine for students in high school. This 
-					startup stems from my experiences studying for AP/IB exams in high school, where I really wished that there 
-					were more practice materials that would&apos;ve saved me time. The practice exams are generated with state-of-the-art natural language processing 
-					(NLP) models, calibrated at college-exam level or slightly harder to make sure students are prepared for exams.
-				</p>
-				<p className="my-4">
-					I&apos;ve also been working on Bioimedge (pronounced bio-image), a zero- and low-code platform 
-					for computer vision for biomedical and healthcare purposes. I envision this as a B2B startup
-					working with doctors, researchers, and other businesses with needs for biomedical imaging. 
-					I am looking for motivated, talented people to join as cofounder / engineeers. 
-				</p>
-			</div>
-
-			<div className="my-8">
-				<h1 className={title({ size: "sm" })}>Education</h1>
-				<ul className="list-disc list-inside indent-4 my-4">
-					<li>Master of Computer Science (MCS), UIUC, Aug 2024 - May 2025</li>
-					<li>Bachelor of Science (B.S.), Computer Science, UIUC, Aug 2021 - May 2023</li>
-				</ul>
-				<div className = "flex flex-col md:flex-row gap-4 items-center">
-					<div className = "w-full md:w-1/2 ">
-						<p>
-							I graduated from Upper Saint Clair High School in June 2021. I was an exchange
-							student at École polytechnique fédérale de Lausanne (EPFL) in Lausanne, 
-							Vaud, Switzerland from September 2022 to February 2023, pictured 
-							{isMobile ? " below" : " on the right"}.
-						</p>
-					</div>
-					<div className = "w-full md:w-1/2">
-						<Image
-							alt="EPFL Campus"
-							src="/images/epfl.webp"
-						/>
-					</div>
-				</div>
-			</div>
-
-			<div className="my-8">
-				<h1 className={title({ size: "sm" })}>Interests</h1>
-				<p className="my-4">
-					I am specifically interested in machine learning, specifically computer vision, for bioinformatics and healthcare purposes. My other interests also include:
-				</p>
-				<ul className="list-disc my-4">
-					<li>Medical data science (i.e. preprocessing, mining)</li>
-					<li>Deep Learning for Education (Natural Language Processing, Computer Vision</li>
-					<li>General-purpose computer vision (i.e. architectures and training/validation optimizations for time & performance)</li>
-					<li>Algorithmic & mathematical theory (i.e. combinatorics)</li>
-					<li>Web/frontend development</li>
-					<li className = "ml-12">Still trying to get better at it, this personal page is my exercise!</li>
-				</ul>
-			</div>
-			<div className="my-8">
-				<h1 className={title()}>Quotes I think about:</h1>
-				<p className="my-2">
-					<span className="italic">&quot;You know, again, it would be great if you were number one in the world, but like, 
-					people are gonna respect what you did, and if you are proud in your heart, of the work you did,
-					then you will view this as a positive.&quot; </span>
-				</p>
-				<p className="my-2">
-					- Dalton Caldwell, on putting everything in as a startup founder on a business / product
-				</p>
-				<br></br>
-				<p className="my-2">
-					<span className="italic">&quot;You never lose if you don&apos;t quit.&quot; </span>
-				</p>
-				<p className="my-2">
-					- My good friend Declan from high school 
-				</p>
-			</div>
 		</div>
     </section>
  	);

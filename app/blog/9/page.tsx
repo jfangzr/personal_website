@@ -1,8 +1,8 @@
 import { title, subtitle} from "@/components/primitives";
-import {Image, Link} from "@nextui-org/react";
+import {BlueLink as Link} from "@/components/link" ;
 export default function ContactPage() {
 	return (
-		<div className="max-w-3xl mx-auto text-justify">
+		<div className="max-w-4xl mx-auto text-justify">
 			<div className = "my-4">
 				<Link href = "/blog/">Return to all blog posts</Link>
 			</div>

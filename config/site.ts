@@ -8,6 +8,7 @@ export const siteConfig = {
 		{ label: "About", href: "/about"},
 		{ label: "Blog", href: "/blog"},
 		{ label: "Contact", href: "/contact"},
+		{ label: "CV", href: "/cv"},
 		{ label: "Hobbies", href: "/hobbies"},
 		{ label: "Travels", href: "/travels"},
 	],
@@ -16,10 +17,11 @@ export const siteConfig = {
 		{ label: "About", href: "/about"},
 		{ label: "Blog", href: "/blog"},
 		{ label: "Contact", href: "/contact"},
+		{ label: "CV", href: "/cv"},
 		{ label: "Hobbies", href: "/hobbies"},
 		{ label: "Travels", href: "/travels"},
 	],
 	links: {
-		github: "https://github.com/jamesdiplomat/",
+		github: "https://github.com/jfangzr/",
 	},
 };

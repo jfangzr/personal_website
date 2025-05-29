@@ -1,11 +1,11 @@
+
 import "@/styles/globals.css";
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
-import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
 import { Analytics } from '@vercel/analytics/react';
-import { Link } from "@nextui-org/link";
+import { BlueLink as Link } from "@/components/link";
 import clsx from "clsx";
 
 export const metadata: Metadata = {
@@ -38,14 +38,12 @@ export default function RootLayout({
 					fontSans.variable
 				)}
 			>
-				<Providers>
-					<div className="relative flex flex-col">
-						<Navbar />
-						<main className="container mx-auto max-w-7xl px-6 flex-grow">
-							{children}
-						</main>
-					</div>
-				</Providers>
+				<div className="relative flex flex-col">
+					<Navbar />
+					<main className="container mx-auto max-w-7xl px-6 flex-grow text-md md:text-lg">
+						{children}
+					</main>
+				</div>
 				<Analytics />
 			</body>
 		</html>

@@ -1,8 +1,10 @@
 import { title, subtitle} from "@/components/primitives";
-import {Image, Link} from "@nextui-org/react";
+import {BlueLink as Link} from "@/components/link" ;
+import Image from "next/image";
+
 export default function ContactPage() {
 	return (
-		<div className="max-w-3xl mx-auto text-justify">
+		<div className="max-w-4xl mx-auto text-justify">
 			<div className = "my-4">
 				<Link href = "/blog/">Return to all blog posts</Link>
 			</div>
@@ -36,11 +38,11 @@ export default function ContactPage() {
 				</p>
 				<div className = "my-8">
 					<h2 className = {subtitle()}>LAS Rate</h2>
-					<Image src="/blog_assets/base-rate.png"></Image>
+					<img src="/blog_assets/base-rate.png" alt="Base Rate"/>
 				</div>
 				<div className = "my-8">
 					<h2 className = {subtitle()}>Engineering/Business Rate</h2>
-					<Image src="/blog_assets/engr-rate.png"></Image>
+					<img src="/blog_assets/engr-rate.png" alt="Engineering Rate"/>
 				</div>
 				<p className = "my-4">
 					Now we divide all of these numbers by 36. For LAS we get approximately:	

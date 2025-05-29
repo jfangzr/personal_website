@@ -1,8 +1,10 @@
 import { title, subtitle} from "@/components/primitives";
-import {Image, Link} from "@nextui-org/react";
+import {BlueLink as Link} from "@/components/link" ;
+import Image from "next/image";
+
 export default function ContactPage() {
 	return (
-		<div className="max-w-3xl mx-auto text-justify">
+		<div className="max-w-4xl mx-auto text-justify">
 			<div className = "my-4">
 				<Link href = "/blog/">Return to all blog posts</Link>
 			</div>
@@ -53,7 +55,7 @@ export default function ContactPage() {
 					plus the country itself has <span className = "italic">a lot</span> of beautiful cities and natural sights to offer.
 				</p>
 				<div className = "flex justify-center">
-					<Image width ={500}  src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/SBB_CFFF_FFS_IR_Genf-Lausanne-Montreux-Aigle-Brig_%2831411822825%29.jpg/1599px-SBB_CFFF_FFS_IR_Genf-Lausanne-Montreux-Aigle-Brig_%2831411822825%29.jpg"/>
+					<img width ={500} alt="Switzerland" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/SBB_CFFF_FFS_IR_Genf-Lausanne-Montreux-Aigle-Brig_%2831411822825%29.jpg/1599px-SBB_CFFF_FFS_IR_Genf-Lausanne-Montreux-Aigle-Brig_%2831411822825%29.jpg"/>
 				</div>
 				<p className = "my-4">
 				    The strong academic reputation at EPFL was enough to convince me to go: it is consistently ranked in the top five
@@ -130,7 +132,7 @@ export default function ContactPage() {
 					Paris because it was cheaper than Geneva), and high speed rail from Paris to Lausanne on TGV Lyria. 
 				</p>
 				<div className = "flex justify-center">
-					<Image width ={500}  src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Paris-Gare_de_Lyon_DSC_1395_%2849651815078%29.jpg/1920px-Paris-Gare_de_Lyon_DSC_1395_%2849651815078%29.jpg"/>
+					<img width ={500} alt="Gare de Lyon" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Paris-Gare_de_Lyon_DSC_1395_%2849651815078%29.jpg/1920px-Paris-Gare_de_Lyon_DSC_1395_%2849651815078%29.jpg"/>
 				</div>
 				<p className = "my-4">
 					Then it was summer break. I booked my flight tickets and reserved housing. For EPFL, their housing was 

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import {Image} from "@nextui-org/react";
 interface Props {
 	source: string;
 	caption: string;
@@ -27,7 +26,7 @@ export const ComposersCard = ({source, caption, alt}: Props) => {
 	return (
         <div className="max-w-xs sm:w-1/3 relative">
             <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                <Image
+                <img
                     className = {hoverBrightness()} 
                     alt= {alt} 
                     src = {source}
