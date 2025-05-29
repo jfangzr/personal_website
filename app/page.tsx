@@ -6,7 +6,7 @@ export default function Home() {
   	return (
     <section>
 		<div className="max-w-4xl mx-auto">
-			<div className="flex flex-col gap-6 my-16">
+			<div className="flex flex-col gap-6 mt-16 mb-8">
 				<h1 className={title()}>Hi, I am James!</h1>
 				<p>I&apos;m a fullstack engineer.  
           My favorite part of fullstack engineering is probably system design, as I love architecting end-to-end
@@ -63,6 +63,13 @@ export default function Home() {
           </li>
         </ul>
         
+			</div>
+      <div className="flex flex-col gap-6 mt-8 mb-16">
+				<h1 className={title()}>Quotes that I think about</h1>
+        <div className="flex flex-col gap-2">
+				<p className="italic">&quot;You never lose if you don&apos;t quit.&quot;</p>
+				<p className="">- My good friend Declan Gessel from high school </p>
+        </div>
 			</div>
 
 		</div>
