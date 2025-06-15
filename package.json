@@ -17,7 +17,7 @@
     "@vercel/analytics": "^1.1.2",
     "autoprefixer": "10.4.16",
     "clsx": "^2.0.0",
-    "eslint": "8.48.0",
+    "eslint": "^8.48.0",
     "eslint-config-next": "15.3.2",
     "intl-messageformat": "^10.5.0",
     "lighthouse": "^12.6.0",

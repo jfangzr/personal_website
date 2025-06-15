@@ -19,7 +19,7 @@ export const LanguagesCard = ({lcp}: {lcp: LCProps}) => {
                 </div>
                 {<div className="w-full md:w-3/5 my-4 md:my-0 flex gap-8 justify-center">
                     {lcp.avatarFnames.map((item) => (
-                        <div key={item} className="w-16 h-16 border-black border-2 rounded">
+                        <div key={item} className="w-16 h-16 border-neutral-600 border-2 rounded">
                             <Image src={item} height={64} width={64} alt="country"/>
                         </div>
                     ))}

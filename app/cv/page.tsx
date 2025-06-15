@@ -14,9 +14,9 @@ export default function AboutPage() {
 				</div>
 				<div className="flex flex-col gap-6 my-8">
 					<h1 className={title()}>Education</h1>
-					<p>I did both my undergrad and master&apos;s degrees from University of Illinois Urbana-Champaign (UIUC).</p>
+					<p>I did both my undergrad and master&apos;s degrees, in computer science, from the University of Illinois Urbana-Champaign (UIUC).</p>
 					<ul className="list-disc list-outside ml-8 space-y-1">
-						<li>Master&apos;s in Computer Science (MCS), UIUC, Aug 2024 to Dec 2025</li>
+						<li>Master&apos;s in Computer Science (MCS), UIUC, Aug 2024 to May 2025</li>
 						<li>Bachelor of Science (B.S.), Computer Science, UIUC, Aug 2021 to May 2023</li>
 					</ul>
 					<p>
