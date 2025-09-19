@@ -5,7 +5,7 @@ export default function AboutPage() {
 	return (
 		<section>
 			<div className="max-w-4xl mx-auto">
-				{/* {<div className="flex flex-col gap-6 mt-16 mb-8">
+				{/* <div className="flex flex-col gap-6 mt-16 mb-8">
 					<h1 className={title()}>Summary of my work</h1>
 					<p>
 						I specialize in building functional, production-ready products in a short period of time. 
@@ -26,7 +26,7 @@ export default function AboutPage() {
 					<p>
 						For any inquiries, please reach out to me via Twitter/X at <BlueLink href="https://x.com/polymath_james" newPage={true}>@polymath_james</BlueLink> or LinkedIn at <BlueLink href="https://www.linkedin.com/in/james-fang-uiuccs/">https://www.linkedin.com/in/james-fang-uiuccs/</BlueLink>.
 					</p>
-				</div>} */}
+				</div> */}
 				<div className="flex flex-col gap-6 my-8">
 					<h1 className={title()}>Resume</h1>
 					<p>
