@@ -5,7 +5,29 @@ export default function AboutPage() {
 	return (
 		<section>
 			<div className="max-w-4xl mx-auto">
-				<div className="flex flex-col gap-6 mt-16 mb-8">
+				{/* {<div className="flex flex-col gap-6 mt-16 mb-8">
+					<h1 className={title()}>Summary of my work</h1>
+					<p>
+						I specialize in building functional, production-ready products in a short period of time. 
+						In the past, I have transformed many applications from hard-coded, buggy prototypes to clean, performant, launch-ready products. 
+						I am open to taking on novel projects as well and I am agile to learn new skills, tools, and frameworks. 
+					</p>
+					<p>
+						Faithful to the term &quot;fullstack engineering&quot;, I have built end-to-end applications and features that involve engineering 
+						frontend, backend, LLM/AI components, and infrastructure for both API-integrated and self-hosted services. For example, I have used OpenAI API with Pinecone vector databases
+						in Rx Jot, and I have self-hosted OpenSearch + Qwen-2.5 VL + VLM embedding models on vLLM for an image + RAG application. <span className="italic">[The 
+						startup on which I worked on the self-hosted multimodal pipeline is currently in stealth and has requested me to not disclose their name nor the domain of their product.]</span>
+					</p>
+					<p>
+						I have worked on applications in a variety of industries, including healthcare (both physical and mental), education, industry, and AI 
+						for hardware. I see fullstack engineering as both a science and an art form. Below is a non-exhaustive chart of tools I&apos;ve used recently: 
+					</p>
+					<Image src="/images/frameworks.png" height={800} width={1200} alt="Tools"/>
+					<p>
+						For any inquiries, please reach out to me via Twitter/X at <BlueLink href="https://x.com/polymath_james" newPage={true}>@polymath_james</BlueLink> or LinkedIn at <BlueLink href="https://www.linkedin.com/in/james-fang-uiuccs/">https://www.linkedin.com/in/james-fang-uiuccs/</BlueLink>.
+					</p>
+				</div>} */}
+				<div className="flex flex-col gap-6 my-8">
 					<h1 className={title()}>Resume</h1>
 					<p>
 						<BlueLink href={"/resume.pdf"} newPage={true}>Link to Resume</BlueLink>
